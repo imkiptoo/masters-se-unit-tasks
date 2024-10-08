@@ -1,6 +1,4 @@
 fn main() {
-    println!("Hello, world!");
-
     let array: Vec<i32> = vec![1, 1];
 
     let equal_on_both_sides = can_divide_array(array);
@@ -13,7 +11,7 @@ fn main() {
 }
 
 fn can_divide_array(array: Vec<i32>) -> bool {
-    if(array.len() % 2 != 0) {
+    if array.len() % 2 != 0 {
         return false;
     }
 
