@@ -115,6 +115,8 @@ Implement the `ShiftCipher` class with methods for encryption (`encrypt`) and de
     - Decrypted: `thistextisencrypted`
     - Encrypted: `glhvhuwhawlvwyhuvfkoxhvvhow`
 
+Here's Task 12 in markdown format:
+
 ## Task 12 (Twitter Wall)
 A Twitter wall displays tweets in real-time. Each tweet consists of a user name and text content, which is limited to 140 characters.
 
@@ -126,3 +128,27 @@ Implement the `Tweet` and `TwitterWall` classes. The `TwitterWall` class should 
 TwitterWall tw = new TwitterWall(2);
 tw.addTweet(new Tweet("Bot1", "This is a tweet that contains so much text that it will exceed the allowed 140 characters."));
 System.out.println(Arrays.toString(tw.getTweets()));
+```
+
+Output:
+```
+Bot1: This is a tweet that contains so much text that it will exceed the allowed 140 characters.
+```
+
+### Another Test Case:
+```java
+TwitterWall tw = new TwitterWall(2);
+tw.addTweet(new Tweet("Bot1", "Hello"));
+tw.addTweet(new Tweet("Bot2", "Hello too"));
+tw.addTweet(new Tweet("Bot3", "How are you?"));
+System.out.println(Arrays.toString(tw.getTweets()));
+```
+
+Output:
+```
+Bot2: Hello too
+Bot3: How are you?
+```
+```
+
+This section describes the implementation and behavior of a Twitter wall with a fixed capacity, along with example test cases.
