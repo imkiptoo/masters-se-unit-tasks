@@ -115,8 +115,6 @@ Implement the `ShiftCipher` class with methods for encryption (`encrypt`) and de
     - Decrypted: `thistextisencrypted`
     - Encrypted: `glhvhuwhawlvwyhuvfkoxhvvhow`
 
-Here's Task 12 in markdown format:
-
 ## Task 12 (Twitter Wall)
 A Twitter wall displays tweets in real-time. Each tweet consists of a user name and text content, which is limited to 140 characters.
 

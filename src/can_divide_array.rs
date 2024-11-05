@@ -1,5 +1,5 @@
 pub(crate) fn can_divide_array() {
-    let mut divisible;
+    let divisible;
 
     let array: Vec<i32> = vec![1, 2, 5, 7, 5, 3, 1, 8];
 

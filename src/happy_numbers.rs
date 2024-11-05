@@ -1,4 +1,3 @@
-use std::collections::HashSet;
 use std::io;
 
 fn square_digits(mut number: u128) -> u128 {
@@ -30,10 +29,10 @@ pub(crate) fn find_happy_number() {
         }
     };
 
-    loop_until_happiness_determined(user_input, &mut HashSet::new())
+    loop_until_happiness_determined(user_input, &mut Vec::new())
 }
 
-fn loop_until_happiness_determined(number: u128, previous_sums: &mut HashSet<u128>){
+fn loop_until_happiness_determined(number: u128, previous_sums: &mut Vec<u128>){
     let mut current_number = number;
 
     loop {
@@ -46,9 +45,13 @@ fn loop_until_happiness_determined(number: u128, previous_sums: &mut HashSet<u12
         } else if previous_sums.contains(&sum_of_digits_squared) {
             println!("The Number: {} is UNHAPPY :(", number);
             println!("Process took {} iteration(s)", previous_sums.len() + 1);
+
+            print!("Previous Sums: ");
+            println!("{:?}, ", previous_sums);
+
             break;
         } else {
-            previous_sums.insert(sum_of_digits_squared);
+            previous_sums.push(sum_of_digits_squared);
             current_number = sum_of_digits_squared;
         }
     }
