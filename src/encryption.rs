@@ -27,10 +27,10 @@ pub(crate) fn encryption() {
 
         let shifted_char = if character.is_ascii_lowercase() {
             // Shift the character and wrap around within 'a' to 'z'
-            (((character + b'a' - shifting_key) % 26) + b'a') as char
+            (((character - b'a' + shifting_key) % 26) + b'a') as char
         } else if character.is_ascii_uppercase() {
             // Shift the character and wrap around within 'a' to 'z'
-            (((character + b'A' - shifting_key) % 26) + b'A') as char
+            (((character - b'A' + shifting_key) % 26) + b'A') as char
         } else {
             character as char
         };
