@@ -41,3 +41,4 @@ pub(crate) fn generate_german_iban(bank_code: &str, account_number: &str) {
 
     println!("Generated IBAN: {}", generated_iban);
 }
+
