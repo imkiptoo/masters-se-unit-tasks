@@ -150,3 +150,6 @@ Bot3: How are you?
 ```
 
 This section describes the implementation and behavior of a Twitter wall with a fixed capacity, along with example test cases.
+
+# Author
+- [GitHub](github.com/imkiptoo) Isaac Kiptoo
